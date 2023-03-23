@@ -1,0 +1,44 @@
+model_weights
+    backend: tensorflow
+    keras_version: 2.5.0
+    layer_names: ['dense' 'dropout' 'dense_1' 'dropout_1' 'dense_2']
+model_weights/dense
+    weight_names: ['dense/kernel:0' 'dense/bias:0']
+model_weights/dense/dense
+model_weights/dense/dense/bias:0
+model_weights/dense/dense/kernel:0
+model_weights/dense_1
+    weight_names: ['dense_1/kernel:0' 'dense_1/bias:0']
+model_weights/dense_1/dense_1
+model_weights/dense_1/dense_1/bias:0
+model_weights/dense_1/dense_1/kernel:0
+model_weights/dense_2
+    weight_names: ['dense_2/kernel:0' 'dense_2/bias:0']
+model_weights/dense_2/dense_2
+model_weights/dense_2/dense_2/bias:0
+model_weights/dense_2/dense_2/kernel:0
+model_weights/dropout
+    weight_names: []
+model_weights/dropout_1
+    weight_names: []
+optimizer_weights
+    weight_names: ['SGD/iter:0' 'SGD/dense/kernel/momentum:0' 'SGD/dense/bias/momentum:0'
+ 'SGD/dense_1/kernel/momentum:0' 'SGD/dense_1/bias/momentum:0'
+ 'SGD/dense_2/kernel/momentum:0' 'SGD/dense_2/bias/momentum:0']
+optimizer_weights/SGD
+optimizer_weights/SGD/dense
+optimizer_weights/SGD/dense/bias
+optimizer_weights/SGD/dense/bias/momentum:0
+optimizer_weights/SGD/dense/kernel
+optimizer_weights/SGD/dense/kernel/momentum:0
+optimizer_weights/SGD/dense_1
+optimizer_weights/SGD/dense_1/bias
+optimizer_weights/SGD/dense_1/bias/momentum:0
+optimizer_weights/SGD/dense_1/kernel
+optimizer_weights/SGD/dense_1/kernel/momentum:0
+optimizer_weights/SGD/dense_2
+optimizer_weights/SGD/dense_2/bias
+optimizer_weights/SGD/dense_2/bias/momentum:0
+optimizer_weights/SGD/dense_2/kernel
+optimizer_weights/SGD/dense_2/kernel/momentum:0
+optimizer_weights/SGD/iter:0

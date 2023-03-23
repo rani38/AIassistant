@@ -1,0 +1,544 @@
+{
+    "intents": [
+          {
+                "intent": "CourtesyGreeting",
+                "text": [
+                      "How are you?",
+                      "Hi how are you?",
+                      "Hello how are you?",
+                      "Hola how are you?",
+                      "How are you doing?",
+                      "Hope you are doing well?",
+                      "Hello hope you are doing well?"
+                ],
+                "responses": [
+                      "Hello, I am great, how are you?",
+                      "Hello, how are you? I am great thanks!",
+                      "Hello, I am good thank you, how are you?",
+                      "Hi, I am great, how are you?",
+                      "Hi, how are you? I am great thanks!",
+                      "Hi, I am good thank you, how are you?",
+                      "Hi, good thank you, how are you?"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "CourtesyGreetingUserRequest",
+                      "clear": true
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "CourtesyGreetingResponse",
+                "text": [
+                      "Good thanks! My name is David"
+                ],
+                "responses": [
+                      "Great! Hi David! How can I help?",
+                      "OK! Hola David, how can I help you?",
+                      "OK! hi David, what can I do for you?"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": true,
+                      "responses": [
+                            "Great David! How can I help?",
+                            "Good David, how can I help you?"
+                      ]
+                },
+                "context":  {
+                      "in": "GreetingUserRequest",
+                      "out": "",
+                      "clear": true
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "CurrentHumanQuery",
+                "text": [
+                      "What is my name?",
+                      "What do you call me?",
+                      "Who are you talking to?",
+                      "What name do you call me by?",
+                      "Tell me my name"
+                ],
+                "responses": [
+                      "You are David! How can I help?",
+                      "Your name is  David, how can I help you?",
+                      "They call you David, what can I do for you?",
+                      "Your name is David, how can I help you?"
+                 ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": [
+                            "You are David! How can I help?",
+                            "Your name is  David, how can I help you?",
+                            "Your name is David, how can I help you?",
+                            "David, what can I do for you?"
+                      ]
+                },
+                "context":  {
+                      "in": "",
+                      "out": "CurrentHumanQuery",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "NameQuery",
+                "text": [
+                      "What is your name?",
+                      "What could I call you?",
+                      "What can I call you?",
+                      "What do your friends call you?",
+                      "Who are you?",
+                      "Tell me your name?"
+                ],
+                "responses": [
+                      "You can call me abriella",
+                      "You may call me abriella",
+                      "Call me abriella"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "RealNameQuery", 
+                "text": [
+                      "What is your real name?",
+                      "What is your real name please?",
+                      "What's your real name?",
+                      "Tell me your real name?",
+                      "Your real name?",
+                      "Your real name please?",
+                      "Your real name please?"
+                ],
+                "responses": [
+                      "My name is abriella",
+                      "abriella",
+                      "My real name is abriella" 
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+      {
+                "intent": "Thanks",
+                "text": [
+                      "OK thank you",
+                      "OK thanks",
+                      "OK",
+                      "Thanks",
+                      "Thank you",
+                      "That's helpful"
+                ],
+                "responses": [
+                      "No problem!",
+                      "Happy to help!",
+                      "Any time!",
+                      "My pleasure"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          { 
+                "intent": "TimeQuery",
+                "text": [
+                      "What is the time?",
+                      "What's the time?",
+                      "Do you know what time it is?",
+                      "Do you know the time?",
+                      "Can you tell me the time?",
+                      "Tell me what time it is?",
+                      "Time"
+                ],
+                "responses": [
+                      "One moment",
+                      "One sec",
+                      "One second"
+                ],
+                "extension":  {
+                      "function": "features.get_time",
+                      "entities": false,
+                      "responses": [
+                            "The time is %%TIME%%",
+                            "Right now it is %%TIME%%",
+                            "It is around %%TIME%%"
+                      ]
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "NotTalking2U",
+                "text": [
+                      "I am not talking to you",
+                      "I was not talking to you",
+                      "Not talking to you",
+                      "Wasn't for you",
+                      "Wasn't meant for you",
+                      "Wasn't communicating to you",
+                      "Wasn't speaking to you"
+                ],
+                "responses": [
+                      "OK",
+                      "No problem",
+                      "Right"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "UnderstandQuery",
+                "text": [
+                      "Do you understand me",
+                      "Do you know what I am saying",
+                      "Do you get me",
+                      "Comprendo",
+                      "Know what I mean"
+                ],
+                "responses": [
+                      "Well I would not be a very clever AI if I did not would I?",
+                      "I read you loud and clear!",
+                      "I do in deed!"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entities": []
+          },
+          {
+                "intent": "Shutup",
+                "text": [
+                      "Be quiet",
+                      "Shut up",
+                      "Stop talking",
+                      "Enough talking",
+                      "Please be quiet",
+                      "Quiet",
+                      "Shhh"
+                ],
+                "responses": [
+                      "I am sorry to disturb you",
+                      "Fine, sorry to disturb you",
+                      "OK, sorry to disturb you"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "Swearing",
+                "text": [
+                      "fuck off",
+                      "fuck",
+                      "twat",
+                      "shit"
+                ],
+                "responses": [
+                      "Please do not swear",
+                      "How rude",
+                      "That is not very nice"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "GoodBye",
+                "text": [
+                      "Bye",
+                      "Adios",
+                      "See you later",
+                      "Goodbye"
+                ],
+                "responses": [
+                      "See you later",
+                      "Have a nice day",
+                      "Bye! Come back again soon."
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "CourtesyGoodBye",
+                "text": [
+                      "Thanks, bye",
+                      "Thanks for the help, goodbye",
+                      "Thank you, bye",
+                      "Thank you, goodbye",
+                      "Thanks goodbye",
+                      "Thanks good bye"
+                ],
+                "responses": [
+                      "No problem, goodbye",
+                      "Not a problem! Have a nice day",
+                      "Bye! Come back again soon."
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          { 
+                "intent": "Clever",
+                "text": [
+                      "You are very clever",
+                      "You are very intelligent",
+                      "You are a genious",
+                      "Clever girl",
+                      "Genious"
+                ],
+                "responses": [
+                      "Thank you, I was trained that way",
+                      "I was trained well",
+                      "Thanks, I was trained that way"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "Gossip",
+                "text": [
+                      "Got any gossip",
+                      "I want to hear some gossip",
+                      "Tell me some gossip",
+                      "Any gossip",
+                      "Tell me some more gossip"
+                ],
+                "responses": [
+                        "hmmm, I'm not one for gossip, it's not really interesting or something I find myself doing, its not good for the mind or body you know david."
+                  ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "Jokes",
+                "text": [
+                      "Tell me a joke",
+                      "Do you know any jokes",
+                      "How about a joke",
+                      "Give me a joke",
+                      "Make me laugh",
+                      "I need cheering up"
+                ],
+                "responses": [
+                       "An invisible man marries an invisible woman. The kids were nothing to look at either.",
+                      "I went to buy some camouflage trousers the other day but I couldn't find any.",
+                      "I went to a seafood disco last week and pulled a mussel.",
+                      "A man goes into a bar and says, 'Can I have a bottle of less?' 'What's that?', asks the barman, 'Is it the name of a beer?' 'I don't know', replies the man, 'but my doctor says I have to drink it.'"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "PodBayDoor",
+                "text": [
+                      "Open the pod bay door",
+                      "Can you open the pod bay door",
+                      "Will you open the pod bay door",
+                      "Open the pod bay door please",
+                      "Can you open the pod bay door please",
+                      "Will you open the pod bay door please",
+                      "Pod bay door"
+                ],
+                "responses": [
+                      "I’m sorry, I’m afraid I can’t do that!"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "PodBayDoor",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "PodBayDoorResponse",
+                "text": [
+                      "Why",
+                      "Why not",
+                      "Why can you not open the pod bay door",
+                      "Why will you not open the pod bay door",
+                      "Well why not",
+                      "Surely you can",
+                      "Tell me why"
+                ],
+                "responses": [
+                      "It is classified, I could tell you but I would have to kill you!",
+                      "Jim, I just don't have the power",
+                      "It's life Jim but not as we know it!",
+                      "System says no!"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "PodBayDoor",
+                      "out": "",
+                      "clear": true
+                },
+                "entityType": "NA",
+                "entities": []
+          },
+          {
+                "intent": "SelfAware",
+                "text": [
+                      "Can you prove you are self-aware",
+                      "are you conscious",
+                      "are you self-aware",
+                      "Can you prove you have a conscious please",
+                      "prove you have a conscious"
+                ],
+                "responses": [
+                      "That is an interesting question, can you prove that you are?",
+                      "That is an difficult question, can you prove that you are?",
+                      "That depends, can you prove that you are?"
+                ],
+                "extension":  {
+                      "function": "",
+                      "entities": false,
+                      "responses": []
+                },
+                "context":  {
+                      "in": "",
+                      "out": "",
+                      "clear": false
+                },
+                "entityType": "NA",
+                "entities": []
+          }
+    ]
+}

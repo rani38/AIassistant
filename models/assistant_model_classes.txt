@@ -1,0 +1,1 @@
+['create_note', 'delete_note', 'get_books', 'get_started', 'get_todolist', 'get_weather', 'play_music', 'quit', 'read_note', 'thank_you', 'time', 'wake', 'welcome', 'wiki_direct', 'wiki_search']

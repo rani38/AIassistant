@@ -1,0 +1,68 @@
+{"intents":
+[
+    {"tag": "wake",
+    "patterns": ["abriella", "hey abriella"],
+    "responses": [""]},
+    
+    {"tag": "welcome",
+    "patterns": ["introduce yourself abriella"],
+    "responses": [""]},
+
+    {"tag": "thank_you",
+    "patterns": ["thank you, thanks for that, thanks, that's great"],
+    "responses": [""]},
+
+    {"tag": "create_note",
+    "patterns": ["make a note", "Write a note", "Take a note"],
+    "responses": [""]},
+
+    {"tag": "read_note",
+    "patterns": ["read my note", "read note back to me", "whats in my notes file", "Read my notes"],
+    "responses": [""]},
+
+    {"tag": "delete_note",
+    "patterns": ["delete my note", "delete notes", "remove note", "delete a note please"],
+    "responses": [""]},
+
+    {"tag": "get_todolist",
+    "patterns": ["please show my todos", "show my todos", "whats on my todo list", "show my todo", "I want to see my todos"],
+    "responses": [""]},
+    
+    {"tag": "time",
+    "patterns": ["whats the time", "do you have the time","what time is it"],
+    "responses": [""]},
+
+    {"tag": "wiki_search",
+    "patterns": ["search for", "search for", "search for something on wikipedia", "search for something on wiki"],
+    "responses": [""]},
+
+    {"tag": "wiki_direct",
+    "patterns": ["talk to me about", "tell me about", "what is", "look up", "who is", "what is", "what are"],
+    "responses": [""]},
+
+    {"tag": "play_music",
+    "patterns": ["play some music", "play something relaxing", "play relaxing music", "play a nice song"],
+    "responses": [""]},
+
+    {"tag": "get_weather",
+    "patterns": ["how hot is it", "todays weather", "is it going to rain today", "get forecast", "weather forecast", "whats the weather like today", "do I need an umbrella today"],
+    "responses": [""]},
+    
+    {"tag": "get_books",
+    "patterns": ["books recommendation", "books to read", "new books", "nice books", "what will I read?"],
+    "responses": [""]},
+
+    {"tag": "get_started",
+    "patterns": ["get started"],
+    "responses": [""]},
+
+    {"tag": "quit",
+    "patterns": ["exit", "quit", "goodbye", "bye", "see you later", "see you soon", "see you later alligator", "laters"],
+    "responses": [""]},
+
+    {"tag": "stop",
+    "patterns": ["please stop"],
+    "responses": [""]}
+
+   
+]}
